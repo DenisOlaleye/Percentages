@@ -8,14 +8,20 @@ values in reverse order. Save the application as Percentages.java.
 b. Modify the Percentages class to accept the values of the two doubles from a
 user at the keyboard. Save the file as Percentages2.java.*/
 
+import java.util.Scanner;
 
 public class Percentages 
 {
 	public static void main (String [] args)
 	{
-		double one = 35;
-		double two = 40;
+		double one;
+		double two;
+		Scanner input = new Scanner(System.in);
 		
+		System.out.println("Enter firs number ");
+		one = input.nextDouble();
+		System.out.println("Enter second number ");
+		two = input.nextDouble();
 		computePercent(one, two);
 	}
 		
